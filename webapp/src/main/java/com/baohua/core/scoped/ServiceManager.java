@@ -21,13 +21,6 @@ public class ServiceManager implements ServiceLocator {
         this.factories.put(type, factory);
     }
 
-    /**
-     * 通过服务类型获取服务
-     *
-     * @param id 服务标识符
-     * @return 服务
-     * @throws ServiceNotFoundException
-     */
     @Override
     @SuppressWarnings("unchecked cast")
     public <T extends Service> T getService(ServiceType id) throws ServiceNotFoundException {
