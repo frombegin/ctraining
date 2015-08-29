@@ -5,15 +5,10 @@ import java.util.Date;
 
 public class Lesson {
 
-    enum Status {
-        preparing,
-        taught
-    }
-
     private int id;
     private Date startedAt;
     private int duration;
-    private Status status;
+    private LessonStatus status;
     private int courseId;
 
 }

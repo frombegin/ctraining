@@ -10,13 +10,7 @@ public class Course {
     private String description;
     private Date createdAt;
 
-    enum Status {
-        preparing,
-        published,
-        teaching,
-        taught
-    }
-    Status status;
+    CourseStatus status;
 
     String tags;
 

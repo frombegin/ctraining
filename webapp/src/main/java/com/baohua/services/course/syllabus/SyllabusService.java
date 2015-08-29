@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface SyllabusService {
 
-    int createNode(int courseId, Node.Type type,  String title, String description, int parentNodeId);
+    int createNode(int courseId, NodeType type,  String title, String description, int parentNodeId);
 
     void deleteNode(int courseId, int nodeId);
 
